@@ -13,5 +13,5 @@ export const useFetch = (apiPath, queryTerm="") => {
          fetchMovies();
     }, [url])
 
-  return {data} 
+  return { data } 
 }
