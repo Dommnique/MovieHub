@@ -45,39 +45,37 @@ export const MovieDetail = () => {
                         </svg>
                         <p className="text-sm text-gray-900 dark:text-white">{movie.vote_average}</p>
                         <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-                        <a href="#" className="text-sm font-medium text-gray-900 dark:text-white">{movie.vote_count}</a>
+                        <span className="text-sm font-medium text-gray-900 dark:text-white">{movie.vote_count}</span>
                     </div>
 
                     <div className="my-3">
                         <p className="font-bold">Release Date:
-                        <span className="ml-2 font-light">{movie.release_date}</span>
+                            <span className="ml-2 font-light">{movie.release_date}</span>
                         </p>
                     </div>
 
                     <div className="my-3">
                         <p className="font-bold">Budget:
-                        <span className="ml-2 font-light">{movie.budget}</span>
+                            <span className="ml-2 font-light">{movie.budget}</span>
                         </p>
                     </div>
 
                     <div className="my-3">
                         <p className="font-bold">Runtime:
-                        <span className="ml-2 font-light">{movie.runtime} mins.</span>
+                            <span className="ml-2 font-light">{movie.runtime} mins.</span>
                         </p>
                     </div>
 
                     <div className="my-3">
                         <p className="font-bold">Revenue:
-                        <span className="ml-2 font-light">{movie.revenue}</span>
+                            <span className="ml-2 font-light">{movie.revenue}</span>
                         </p>
                     </div>
 
-                    <div className="my-3">
-                        <p className="font-bold">IMDB Code:
-                        <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreferrer" className="ml-2 font-light">{movie.imdb_id}</a>
-                        </p>
-                    </div>
-
+                    <p className="my-4">
+                        <span className="mr-2 font-bold">IMDB Code:</span>
+                        <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreferrer">{movie.imdb_id}</a>
+                    </p>
                 </div>
             </section>
         </main>
