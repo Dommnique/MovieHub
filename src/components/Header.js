@@ -33,7 +33,7 @@ export const Header = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 border-b-2 border-gray-200 dark:border-b-2 dark:border-gray-900">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={Logo} className="h-8" alt="MovieHub Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MovieHub</span>
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Movie Net</span>
           </Link>
 
           <div className="flex md:order-2">
