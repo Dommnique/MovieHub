@@ -26,14 +26,14 @@ export const MovieDetail = () => {
                     <img className="rounded" src={image} alt={movie.title} />
                 </div>
 
-                <div className="my-4 text-lg dark:text-white text-bold text-slate-800 max-w-2xl ml-8">
+                <div className=" text-lg dark:text-white text-bold text-slate-800 max-w-2xl">
                     <h1 className="my-3 text-4xl font-bold">{movie.title}</h1>
-                    <p className="my-2">{movie.overview}</p>
+                    <p className="px-2 text-wrap my-2">{movie.overview}</p>
 
                     {movie.genres ? (
-                        <p className="py-4">
+                        <p className="py-7 flex flex-wrap">
                             {movie.genres.map((genre) => (
-                                <span className="my-4 mr-2 rounded py-1 px-2 border border-slate-400" key={genre.id}>{genre.name}</span>
+                                <span className="mr-2 rounded p-2 border border-slate-400" key={genre.id}>{genre.name}</span>
                             )
                             )}
                         </p>
